@@ -1,4 +1,4 @@
-# Use the official Node.js image as the base image
+# Use the official Node.js image as the base image project
 FROM node:16.14.0-alpine 
 # If you're using M1, M2 Mac, try this: 
 # FROM  --platform=linux/amd64 node:16.14.0-alpine
