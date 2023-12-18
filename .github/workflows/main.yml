@@ -9,8 +9,9 @@ jobs:
   call-workflow-data:
         uses: bryanus1/pipelines-reusable/.github/workflows/publish_docker_image.yaml@main
         with:
-          bucket_name: s3-bucket-braves
+          aws-region: "us-east-2"
+          image-name: "project-back-brave"
         secrets:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          aws-region: us-east-2
+          aws-account-id:  ${{ secrets.AWS_ACCOUNT_ID }}
